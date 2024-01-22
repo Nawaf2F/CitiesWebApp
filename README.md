@@ -24,7 +24,7 @@ To set up this project locally, follow these steps:
 
 1. Prerequisites: Ensure you have .NET Core and Angular CLI installed on your machine.
 2. Clone the Repository: git clone [repository-url]
-3. Database Setup: Set up your SQL database using the provided scripts.
+3. Database Setup: Set up your SQL database using the provided scripts, Or by using Console Package Manager to do the Migrations and check the connection string.
 4. Backend Setup: Navigate to the backend directory and run dotnet restore followed by dotnet run.
 5. Frontend Setup: Navigate to the frontend directory and run npm install followed by ng serve.
 6. Access the App: Open your browser and go to http://localhost:4200.
