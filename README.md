@@ -1,4 +1,3 @@
-# Content
 
 # City Points of Interest Web App
 
