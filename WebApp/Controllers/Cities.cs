@@ -8,7 +8,7 @@ using WebApp.Services;
 namespace WebApp.Controllers
 {
     [ApiController]
-    [Authorize]
+   // [Authorize]
     [Route("api/cities")]
     public class Cities: ControllerBase
     {

@@ -8,7 +8,7 @@ using WebApp.Services;
 namespace WebApp.Controllers
 {
     [Route("api/cities/{cityId}/pointsofinterest")]
-    [Authorize]
+    //[Authorize]
     [ApiController]
     public class PointsOfInterest: ControllerBase
     {
@@ -32,10 +32,10 @@ namespace WebApp.Controllers
             
             // Example: If the user is authenticated and does not have the same city as the city requested he will not be authorized
             // we have a duumy data city = riyadh
-            if(!await _cityInfoRepository.CityNameMatchesCityId(cityName, cityId))
-            {
-                return Forbid();
-            }
+           // if(!await _cityInfoRepository.CityNameMatchesCityId(cityName, cityId))
+           // {
+             //   return Forbid();
+            //}
 
           //find city
           if(!await _cityInfoRepository.CityExistAsync(cityId))
