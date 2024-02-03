@@ -18,7 +18,9 @@ export class CityService {
 
   // Get a single city by its ID
   getCityById(id: number): Observable<City> {
-    return this.http.get<City>(`${this.apiUrl}/${id}`);
+    var data = this.http.get<City>(`${this.apiUrl}/${id}?includePointsOfInterest=true`);
+    console.log(data);
+    return data
   }
 
   // Add other methods for POST, PUT, DELETE as needed for your API

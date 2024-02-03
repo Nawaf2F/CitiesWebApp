@@ -13,10 +13,16 @@ export class CitiesComponent implements OnInit {
   constructor(private cityService: CityService) {}
 
   ngOnInit(): void {
-    this.cityService.getCities().subscribe(
-      (data: City[]) => this.cities = data,
-      (error: any) => console.error('There was an error!', error)
-    );
+    let cityData = this.cityService.getCities();
+    
+    cityData.subscribe({
+      next:(data: City[]) => 
+      {
+        this.cities = data
+        console.log(data);
+      },
+      error: (error: any) => console.error('There was an error!', error)
+  });
   }
 }
 

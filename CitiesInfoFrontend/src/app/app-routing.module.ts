@@ -10,6 +10,7 @@ const routes: Routes = [
   { path: 'cities', component: CitiesComponent },
   { path: 'cities/:id', component: CityDetailComponent },
   { path: 'cities/:cityId/points-of-interest', component: PointsOfInterestComponent },
+  { path: '', redirectTo: '/home', pathMatch: 'full'}
 ];
 
 @NgModule({
