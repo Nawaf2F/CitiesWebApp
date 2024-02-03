@@ -1,12 +1,13 @@
-<div class="container">
-    <div class="card-container">
-<p>city-detail works!</p>
-<h3>City: {{city.name}} -   Points Of Interest: {{city.numberOfPointsOfInterest}}</h3>
-<div class="card m-3" *ngFor="let point of city.pointOfInterest" style="width: 18rem;">
-    <div class="card-body">
-      <h5 class="card-title">Point Of Interest Id: {{point.id}}</h5>
-      <p class="card-text">Name: {{point.name}}</p>
-      <p class="card-text">Description: {{point.description}}</p>
+
+<div *ngIf="city" class="container mt-4">
+    <div *ngIf="includePOI && city.pointOfInterest">
+      <h3 class="mt-4">{{ city.name }} City Points of Interest - {{city.numberOfPointsOfInterest}}</h3>
+      <div *ngFor="let poi of city.pointOfInterest" class="card mt-2">
+        <div class="card-body">
+          <h5 class="card-title">{{ poi.name }}</h5>
+          <p class="card-text">{{ poi.description }}</p>
+        </div>
+      </div>
     </div>
-</div>
-    </div>
+  </div>
+  

@@ -17,8 +17,8 @@ export class CityService {
   }
 
   // Get a single city by its ID
-  getCityById(id: number): Observable<City> {
-    var data = this.http.get<City>(`${this.apiUrl}/${id}?includePointsOfInterest=true`);
+  getCityById(id: number,IncludePOI: boolean = true): Observable<City> {
+    var data = this.http.get<City>(`${this.apiUrl}/${id}?includePointsOfInterest=${IncludePOI}`);
     console.log(data);
     return data
   }
