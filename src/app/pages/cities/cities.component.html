@@ -1,0 +1,16 @@
+
+<!-- 
+<ul class="list-group">
+    <li class="list-group-item" *ngFor="let city of cities">
+        <a [routerLink]="['/cities', city.id]">{{ city.name }}</a> - {{ city.description }}
+    </li>
+</ul> 
+-->
+
+<div class="card m-3" *ngFor="let city of cities" style="width: 18rem;">
+    <div class="card-body">
+      <h5 class="card-title">{{city.name}} City</h5>
+      <p class="card-text">{{city.description}}</p>
+      <a [routerLink]="['/cities', city.id]" class="btn btn-primary">Points of interests</a>
+    </div>
+  </div>
