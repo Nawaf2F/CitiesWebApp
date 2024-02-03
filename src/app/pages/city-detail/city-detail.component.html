@@ -1,0 +1,13 @@
+
+<div *ngIf="city" class="container mt-4">
+    <div *ngIf="includePOI && city.pointOfInterest">
+      <h3 class="mt-4">{{ city.name }} City Points of Interest - {{city.numberOfPointsOfInterest}}</h3>
+      <div *ngFor="let poi of city.pointOfInterest" class="card mt-2">
+        <div class="card-body">
+          <h5 class="card-title">{{ poi.name }}</h5>
+          <p class="card-text">{{ poi.description }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  

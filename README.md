@@ -1,48 +1,27 @@
+# CitiesInfo
 
-# City Points of Interest Web App
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.2.6.
 
-## Introduction
-Welcome to the City Points of Interest Web App! This application is designed to provide tourists and locals with detailed information about cities and their various points of interest. 
-It includes comprehensive descriptions of cities, lists the number of points of interest in each city, and provides detailed information about each point of interest.
+## Development server
 
-## Features
-- **City Overview:** Get detailed descriptions of cities including historical and cultural information.
-- **Points of Interest:** Discover points of interest within each city, each with its own description.
-- **Search Functionality:** Easily search for cities or specific points of interest.
-- **Filtering Options:** Filter points of interest based on different criteria.
-- **Paging:** Navigate through the information in a user-friendly manner with paging support.
+Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
 
-## Technologies Used
-> Backend: .NET Core
+## Code scaffolding
 
-> Frontend: Angular
+Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
-> Database: SQL Database
+## Build
 
-## Installation and Setup
-To set up this project locally, follow these steps:
+Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
 
-1. Prerequisites: Ensure you have .NET Core and Angular CLI installed on your machine.
-2. Clone the Repository: git clone [repository-url]
-3. Database Setup: Set up your SQL database using the provided scripts, Or by using Console Package Manager to do the Migrations and check the connection string.
-4. Backend Setup: Navigate to the backend directory and run dotnet restore followed by dotnet run.
-5. Frontend Setup: Navigate to the frontend directory and run npm install followed by ng serve.
-6. Access the App: Open your browser and go to http://localhost:4200.
-   
-## How to Use
-- **Viewing Cities:** On the homepage, you will see a list of cities. Click on any city to view its details and points of interest.
-- **Exploring Points of Interest:** In each city's detail page, points of interest are listed. Click on any to get more information.
-- **Search and Filter:** Use the search bar to find specific cities or points of interest. Filters can be applied to refine your search results.
+## Running unit tests
 
-## Contributing
-Contributions are welcome! If you have suggestions or want to contribute to the project, please follow these steps:
+Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
-1. Fork the repository.
-2. Create a new branch for your feature (git checkout -b feature/AmazingFeature).
-3. Commit your changes (git commit -m 'Add some AmazingFeature').
-4. Push to the branch (git push origin feature/AmazingFeature).
-5. Open a pull request.
+## Running end-to-end tests
 
-## Credits
-1. https://app.pluralsight.com/library/courses/asp-dot-net-core-6-web-api-fundamentals/table-of-contents
+Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
 
+## Further help
+
+To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
